@@ -58,7 +58,7 @@ func ProxyRobotPost(content string) (string, error) {
 		},
 	}
 	reqBytes, _ := json.Marshal(req)
-	rspBody, err := util.DefaultClient.DoReq("POST", "https://api.openai.com/v1/chat/completions", bytes.NewBuffer(reqBytes), headers)
+	rspBody, err := util.DefaultClient.DoReq("POST", "https://one.aiskt.com/v1/chat/completions", bytes.NewBuffer(reqBytes), headers)
 	if err != nil {
 		return "", err
 	}

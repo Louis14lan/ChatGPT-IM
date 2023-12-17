@@ -41,7 +41,7 @@ func (*media) AudioTranscriptions(w http.ResponseWriter, r *http.Request) {
 		"Authorization": "Bearer " + consts.APIKey,
 		"Content-Type":  writer.FormDataContentType(),
 	}
-	rspBytes, err := util.DefaultClient.DoReq("POST", "https://api.openai.com/v1/audio/transcriptions", reqBody, headers)
+	rspBytes, err := util.DefaultClient.DoReq("POST", "https://one.aiskt.com/v1/audio/transcriptions", reqBody, headers)
 	if err != nil {
 		defs.Error(w, defs.Media, "语义转文本失败")
 		return

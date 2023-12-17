@@ -2,7 +2,7 @@ package consts
 
 const (
 	DefaultAddress = "127.0.0.1:8080"
-	APIKey         = "xxxxx"
+	APIKey         = "sk-4oynsa9k2SRZym3d4d30Eb1a4d2941A1B68b95B90cA60a09"
 	RobotUid       = 1629828525085167616
 )
 
